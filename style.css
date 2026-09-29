@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: dark;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  place-items: center;
+  background: #10131a;
+  color: #f4f7fb;
+}
+
+.game-wrapper {
+  width: min(94vw, 940px);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  color: #62e6a7;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.scoreboard > div:not(.separator) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.label {
+  color: #aab4c3;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.separator {
+  color: #586273;
+  font-size: 2rem;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid #364052;
+  border-radius: 8px;
+  background: #171c25;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  cursor: crosshair;
+}
+
+.instructions {
+  color: #aab4c3;
+  font-size: 0.95rem;
+}
+
+kbd {
+  padding: 0.15rem 0.4rem;
+  border: 1px solid #586273;
+  border-radius: 4px;
+  background: #252d3a;
+  color: #f4f7fb;
+}
+
+button {
+  padding: 0.7rem 1.2rem;
+  border: 0;
+  border-radius: 5px;
+  background: #62e6a7;
+  color: #10131a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+  background: #8ff0c3;
+}
